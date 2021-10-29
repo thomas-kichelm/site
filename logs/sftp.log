@@ -1,0 +1,45 @@
+Oct 27 19:32:36 10.71.56.0 u106122319 Connection from 10.71.56.0 port 54930 on 82.165.88.113 port 22
+Oct 27 19:32:36 10.71.56.0 u106122319 Accepted password for u106122319 from 10.71.56.0 port 54930 ssh2
+Oct 27 19:32:36 10.71.56.0 u106122319 Starting session: subsystem 'sftp' for u106122319 from 10.71.56.0 port 54930 id 0
+Oct 27 19:32:37 10.71.56.0 u106122319 session opened for local user u106122319 from [10.71.56.0]
+Oct 27 19:33:07 10.71.56.0 u106122319 Connection from 10.71.56.0 port 37310 on 82.165.88.113 port 22
+Oct 27 19:33:07 10.71.56.0 u106122319 Accepted password for u106122319 from 10.71.56.0 port 37310 ssh2
+Oct 27 19:33:07 10.71.56.0 u106122319 Connection from 10.71.56.0 port 37304 on 82.165.88.113 port 22
+Oct 27 19:33:07 10.71.56.0 u106122319 Accepted password for u106122319 from 10.71.56.0 port 37304 ssh2
+Oct 27 19:33:07 10.71.56.0 u106122319 Starting session: subsystem 'sftp' for u106122319 from 10.71.56.0 port 37310 id 0
+Oct 27 19:33:07 10.71.56.0 u106122319 Starting session: subsystem 'sftp' for u106122319 from 10.71.56.0 port 37304 id 0
+Oct 27 19:33:07 10.71.56.0 u106122319 session opened for local user u106122319 from [10.71.56.0]
+Oct 27 19:33:07 10.71.56.0 u106122319 session opened for local user u106122319 from [10.71.56.0]
+Oct 27 19:33:07 10.71.56.0 u106122319 open "/.htaccess.html" flags READ mode 0666
+Oct 27 19:33:07 10.71.56.0 u106122319 open "/.htaccess" flags READ mode 0666
+Oct 27 19:33:07 10.71.56.0 u106122319 close "/.htaccess.html" bytes read 295 written 0
+Oct 27 19:33:07 10.71.56.0 u106122319 [10.71.56.0|get|0|295|0|0|0|2f2e68746163636573732e68746d6c|]
+Oct 27 19:33:07 10.71.56.0 u106122319 close "/.htaccess" bytes read 348 written 0
+Oct 27 19:33:07 10.71.56.0 u106122319 [10.71.56.0|get|0|348|0|0|0|2f2e6874616363657373|]
+Oct 27 19:33:07 10.71.56.0 u106122319 open "/favicon.ico" flags READ mode 0666
+Oct 27 19:33:07 10.71.56.0 u106122319 sent status No such file
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/index.html" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/index.html" bytes read 3144 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|1|3144|0|0|0|2f696e6465782e68746d6c|]
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/favicon.ico" bytes read 15779 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|1|15779|0|0|0|2f66617669636f6e2e69636f|]
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/index.php" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/package-lock.json" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/index.php" bytes read 4025 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|4025|0|0|0|2f696e6465782e706870|]
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/package-lock.json" bytes read 658 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|658|0|0|0|2f7061636b6167652d6c6f636b2e6a736f6e|]
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/package.json" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/recherche.html" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/package.json" bytes read 285 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|285|0|0|0|2f7061636b6167652e6a736f6e|]
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/recherche.html" bytes read 4227 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|4227|0|0|0|2f7265636865726368652e68746d6c|]
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/style.css" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/upload.php" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/style.css" bytes read 4129 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|4129|0|0|0|2f7374796c652e637373|]
+Oct 27 19:33:08 10.71.56.0 u106122319 close "/upload.php" bytes read 829 written 0
+Oct 27 19:33:08 10.71.56.0 u106122319 [10.71.56.0|get|0|829|0|0|0|2f75706c6f61642e706870|]
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/js/app.js" flags READ mode 0666
+Oct 27 19:33:08 10.71.56.0 u106122319 open "/logs/sftp.log" flags READ mode 0666

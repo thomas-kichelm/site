@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Airedv.fr | Accueil</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.js"></script>
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.time.js"></script>
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.date.js"></script>
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.css">
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.time.css">
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.date.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        window.addEventListener('load', () => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+            }
+
+        })
+    </script>
+
+</head>
+
+<nav>
+    <div id="menu" class="navbar">
+        <ul>
+            <a id="accueil" href="index.html">
+                <li>Accueil</li>
+            </a>
+            <a href="recherche.html">
+                <li>Recherche</li>
+            </a>
+            <a href="#">
+                <li>Mes rendez-vous</li>
+            </a>
+            <a href="#">
+                <li>Mon compte</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+
+            <a onclick="littleMenu()" id="little-menu" href="#">
+                <li><i class="fa fa-bars"></i></li>
+            </a>
+
+
+
+        </ul>
+    </div>
+
+</nav>
+<aside id="left">
+    <div>
+        <h3>
+            Mes prochains rdv:
+        </h3>
+        <ul>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>coiffeur</li>
+            <li>carrosserie</li>
+        </ul>
+    </div>
+
+</aside>
+
+<aside id="right">
+    <div>
+        <h3>
+            Mes derniers rdv:
+        </h3>
+        <ul>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>coiffeur</li>
+            <li>carrosserie</li>
+        </ul>
+    </div>
+
+</aside>
+
+
+
+
+
+
+
+
+<body>
+    <div id="main">
+
+        <h1>
+            Nous contacter :
+        </h1>
+        <form action="">
+            <label for="nom">Nom*</label>
+            <input type="text" required>
+            <label for="Email">Email*</label>
+            <input type="email" name="mail" id="mail" required>
+            <label for="objet">Objet*</label>
+            <select name="objet" id="objet" required>
+                <option value="probleme-tech">Problème technique</option>
+                <option value="partenariat">Demande de partenariat</option>
+                <option value="autre">Autre (préciser)</option>
+            </select>
+            <label for="message" required>Message*</label>
+            <textarea style="font-size: 100%;" name="message" id="message" cols="40" rows="10" required>fln</textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+<script>
+    function closeNav() {
+        var x = document.getElementById("menu");
+
+        x.className = "navbar";
+
+    }
+
+    function littleMenu() {
+        var x = document.getElementById("menu");
+        if (x.className === "navbar") {
+            x.className += "-responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+
+</html>

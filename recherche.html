@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Airedv.fr | Recherche</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.js"></script>
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.time.js"></script>
+    <script type="text/javascript" src="pickadate.js-3.6.2\lib\picker.date.js"></script>
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.css">
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.time.css">
+    <link rel="stylesheet" type="text/css" href="pickadate.js-3.6.2\lib\themes\default.date.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<nav>
+    <div id="menu" class="navbar">
+        <ul>
+            <a id="accueil" href="index.html">
+                <li>Accueil</li>
+            </a>
+            <a href="recherche.html">
+                <li>Recherche</li>
+            </a>
+            <a href="#">
+                <li>Mes rendez-vous</li>
+            </a>
+            <a href="#">
+                <li>Mon compte</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+
+            <a onclick="littleMenu()" id="little-menu" href="#">
+                <li><i class="fa fa-bars"></i></li>
+            </a>
+
+
+
+        </ul>
+    </div>
+
+</nav>
+<aside id="left">
+    <div>
+        <h3>
+            Mes prochains rdv:
+        </h3>
+        <ul>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>coiffeur</li>
+            <li>carrosserie</li>
+        </ul>
+    </div>
+
+</aside>
+
+<aside id="right">
+    <div>
+        <h3>
+            Mes derniers rdv:
+        </h3>
+        <ul>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>dr acco</li>
+            <li>coiffeur</li>
+            <li>carrosserie</li>
+        </ul>
+    </div>
+
+</aside>
+
+
+
+
+
+
+
+
+<body>
+    <div id="main">
+
+        <h1>
+            Recherche :
+        </h1>
+        <p>
+            Pour prendre un rendez-vous rien de plus simple ! <br> Il vous suffit de rechercher un magasin parmis ceux disponible sur le site <br> Vous aurais ensuite la possibilité de choisir un horaire qui vous arrange pour le rendez-vous. <br> Facile
+            ! non ?
+
+        </p>
+        <form style="display: flex;" action="#">
+            <label for="search">Ville:</label>
+            <input style="text-align: left;" type="search" name="city" id="city">
+
+
+            <label for="search">Magasin/Service:</label>
+            <input style="text-align: left;" type="search" name="service" id="service">
+
+            <label for="search">Date:</label>
+            <input value="August 14" data-value="1988/08/14" class="datepicker" type="date">
+
+            <label for="search">Heure:</label>
+            <input value="" data-value="" class="timepicker" type="time">
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+<script>
+    function closeNav() {
+        var x = document.getElementById("menu");
+
+        x.className = "navbar";
+
+    }
+
+    function littleMenu() {
+        var x = document.getElementById("menu");
+        if (x.className === "navbar") {
+            x.className += "-responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+
+
+    $('.datepicker').pickadate({
+        labelMonthNext: 'Go to the next month',
+        labelMonthPrev: 'Go to the previous month',
+        labelMonthSelect: 'Pick a month from the dropdown',
+        labelYearSelect: 'Pick a year from the dropdown',
+        selectMonths: true,
+        selectYears: true
+    })
+
+
+
+
+
+
+
+
+
+
+    $('.datepicker').pickadate({
+        formatSubmit: 'dd/mm/yyyy',
+        monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+        monthsShort: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'],
+        weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        today: 'aujourd\'hui',
+        clear: 'effacer'
+    })
+
+
+
+
+
+
+
+
+
+    $('.timepicker').pickatime()
+</script>
+
+</html>
